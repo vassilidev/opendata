@@ -18,11 +18,11 @@ class CreateClientsTable extends Migration
             $table->foreignId('publication_id')
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->string('denomination')->nullable();
+            $table->longText('denomination')->nullable();
             $table->dateTime('dateAjout')->nullable();
             $table->boolean('ancienClient')->nullable();
-            $table->string('identifiantNational')->nullable();
-            $table->string('typeIdentifiantNational')->nullable();
+            $table->longText('identifiantNational')->nullable();
+            $table->longText('typeIdentifiantNational')->nullable();
         });
     }
 

@@ -21,9 +21,9 @@ class CreateExercicesTable extends Migration
             $table->dateTime('publicationDate')->nullable();
             $table->date('dateDebut')->nullable();
             $table->date('dateFin')->nullable();
-            $table->string('chiffreAffaire')->nullable();
+            $table->longText('chiffreAffaire')->nullable();
             $table->boolean('hasNotChiffreAffaire')->nullable();
-            $table->string('montantDepense')->nullable();
+            $table->longText('montantDepense')->nullable();
             $table->integer('nombreSalaries')->nullable();
             $table->integer('exerciceId')->nullable();
             $table->boolean('noActivite')->nullable();

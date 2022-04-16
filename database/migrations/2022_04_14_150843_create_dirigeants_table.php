@@ -18,10 +18,10 @@ class CreateDirigeantsTable extends Migration
             $table->foreignId('publication_id')
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->string('civilite')->nullable();
-            $table->string('nom')->nullable();
-            $table->string('prenom')->nullable();
-            $table->string('fonction')->nullable();
+            $table->longText('civilite')->nullable();
+            $table->longText('nom')->nullable();
+            $table->longText('prenom')->nullable();
+            $table->longText('fonction')->nullable();
         });
     }
 
