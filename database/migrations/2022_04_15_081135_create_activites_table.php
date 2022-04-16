@@ -21,8 +21,6 @@ class CreateActivitesTable extends Migration
             $table->dateTime('publicationDate');
             $table->string('identifiantFiche')->nullable();
             $table->string('objet')->nullable();
-            $table->json('domainesIntervention')->nullable();
-            $table->json('actionsRepresentationInteret')->nullable();
         });
     }
 
