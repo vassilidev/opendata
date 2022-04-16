@@ -18,7 +18,7 @@ class CreateDecisionsConcerneesTable extends Migration
             $table->foreignId('activite_id')
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->string('text')->nullable();
+            $table->longText('text')->nullable();
         });
     }
 
