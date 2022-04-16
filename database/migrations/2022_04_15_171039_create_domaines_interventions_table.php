@@ -18,7 +18,7 @@ class CreateDomainesInterventionsTable extends Migration
             $table->foreignId('activite_id')
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->string('domaine')->nullable();
+            $table->longText('domaine')->nullable();
         });
     }
 
