@@ -19,8 +19,8 @@ class CreateActivitesTable extends Migration
                 ->constrained()
                 ->cascadeOnDelete();
             $table->dateTime('publicationDate');
-            $table->string('identifiantFiche')->nullable();
-            $table->string('objet')->nullable();
+            $table->longText('identifiantFiche')->nullable();
+            $table->longText('objet')->nullable();
         });
     }
 

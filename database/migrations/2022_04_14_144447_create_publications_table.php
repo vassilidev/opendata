@@ -15,22 +15,22 @@ class CreatePublicationsTable extends Migration
     {
         Schema::create('publications', function (Blueprint $table) {
             $table->id();
-            $table->string('typeIdentifiantNational')->nullable();
-            $table->string('denomination')->nullable();
+            $table->longText('typeIdentifiantNational')->nullable();
+            $table->longText('denomination')->nullable();
             $table->boolean('publierMonAdressePhysique')->nullable();
-            $table->string('codePostal')->nullable();
-            $table->string('ville')->nullable();
-            $table->string('pays')->nullable();
+            $table->longText('codePostal')->nullable();
+            $table->longText('ville')->nullable();
+            $table->longText('pays')->nullable();
             $table->boolean('publierMonAdresseEmail')->nullable();
             $table->boolean('publierMonTelephoneDeContact')->nullable();
-            $table->string('lienSiteWeb')->nullable();
-            $table->string('lienPageTwitter')->nullable();
-            $table->string('lienPageFacebook')->nullable();
-            $table->string('lienPageLinkedin')->nullable();
+            $table->longText('lienSiteWeb')->nullable();
+            $table->longText('lienPageTwitter')->nullable();
+            $table->longText('lienPageFacebook')->nullable();
+            $table->longText('lienPageLinkedin')->nullable();
             $table->boolean('declarationTiers')->nullable();
             $table->boolean('declarationOrgaAppartenance');
             $table->boolean('isActivitesPubliees')->nullable();
-            $table->string('identifiantNational')->nullable();
+            $table->longText('identifiantNational')->nullable();
             $table->dateTime('datePremierePublication')->nullable();
             $table->dateTime('dateCreation')->nullable();
             $table->dateTime('dateDernierePublicationActivite')->nullable();

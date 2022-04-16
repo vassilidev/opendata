@@ -18,9 +18,9 @@ class CreateListSecteursActivitesTable extends Migration
             $table->foreignId('publication_id')
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->string('code')->nullable();
-            $table->string('label')->nullable();
-            $table->string('categorie')->nullable();
+            $table->longText('code')->nullable();
+            $table->longText('label')->nullable();
+            $table->longText('categorie')->nullable();
             $table->integer('ordre')->nullable();
         });
     }
